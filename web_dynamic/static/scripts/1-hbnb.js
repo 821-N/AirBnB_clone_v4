@@ -6,8 +6,8 @@ function update_amenities() {
 	if (checkboxes)
 		checkboxes.forEach(x => {
 			if (x.checked) {
-				ids.push(x.id);
-				names.push(x.name);
+				ids.push(x.dataset.id);
+				names.push(x.dataset.name);
 			}
 		});
 	console.log("names?", names, checkboxes);
