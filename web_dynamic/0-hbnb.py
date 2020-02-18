@@ -35,7 +35,7 @@ def hbnb_filters(the_id=None):
     users = dict([user.id, "{} {}".format(user.first_name, user.last_name)]
                  for user in storage.all('User').values())
     return render_template(
-        '100-hbnb.html',
+        '0-hbnb.html',
         states=states,
         amens=amens,
         places=places,
