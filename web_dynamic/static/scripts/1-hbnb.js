@@ -10,6 +10,7 @@ function update_amenities() {
 				names.push(x.name);
 			}
 		});
+	console.log("names?", names, checkboxes);
 	$(".amenities > h4").text(names.join(", "));
 }
 
